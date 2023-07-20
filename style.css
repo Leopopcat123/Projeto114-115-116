@@ -1,0 +1,39 @@
+  h3
+  {
+     /* !important substituirá qualquer estilo aplicado à tag h3 com nosso estilo. */
+
+    font-size: 25px !important;
+  }
+.btn-success:hover
+{
+  /* ● background-colour: red - quando movemos o mouse sobre o botão “Tirar Foto", a cor do
+botão deve mudar de verde para vermelho. */
+
+	background-color: red;
+}
+/*  adicionar alguns estilos a este Canvas, basicamente estaremos adicionando a
+animação ao canvas. */
+  canvas {
+	  animation-name: example;
+	  animation-duration: 4s;
+	  animation-iteration-count: infinite;
+  }
+
+  /* Vamos definir a animação de example, adicionamos código para alterar a cor da sombra da tela.
+  definiremos uma animação de example na qual escreveremos o código para alterar a cor da
+  sombra da tela. */
+/* 
+  @keyframes é a palavra-chave usada quando queremos definir uma
+  animação.
+  example - é o nome da animação que chamamos no ponto acima */
+@keyframes example {
+
+  /* from {box-shadow : 1px 1px 38px red;} - aqui estamos dando a sombra em
+vermelho quando a animação começa. */
+  from {box-shadow: 1px 1px 38px red;}
+   /* to {box-shadow: 1px 1px 38px yellow;} - então a propriedade box shadow deve
+mudar de vermelho para amarelo, então especificamos amarelo aqui. */
+
+  to {box-shadow: 1px 1px 38px yellow;}
+
+}
